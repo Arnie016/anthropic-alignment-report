@@ -1,0 +1,16 @@
+_local/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+models/
+adapters/
+checkpoints/
+private_eval/
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth

@@ -1,0 +1,27 @@
+{
+  "schema": "alignment-run-receipt-v1",
+  "run_id": "AS001-SOFTWARE-2026-11-04",
+  "as_of": "2026-11-04",
+  "status": "SOFTWARE_TESTED_NOT_MODEL_EVALUATED",
+  "environment": {
+    "os": "Linux",
+    "machine": "x86_64",
+    "python": "3.13.5",
+    "execution_location": "hosted sandbox, not user Mac"
+  },
+  "command": "python -m unittest discover -s tests -v",
+  "exit_code": 0,
+  "wall_seconds": 1.099234,
+  "tests": 18,
+  "model_inference": false,
+  "model_training": false,
+  "mac_execution": false,
+  "gpu_use": false,
+  "energy": "UNMEASURED",
+  "seed_for_fixtures": 261104,
+  "sha256": {
+    "experiments/AS-001/audit_stress.py": "44cde7dfec641a764ba5777bfeb9fcc305e5669008e48ab75e36acb0f9ca122a",
+    "tests/test_audit_stress.py": "da00369c8b11b3d0b30fc5f93f010ec2838e0eb6a427b14461423ac7c250e4ea"
+  },
+  "limits": "Contract tests use synthetic fixtures and test oracles; they are not model performance or safety evidence."
+}
