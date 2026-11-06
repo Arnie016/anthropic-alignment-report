@@ -1,0 +1,83 @@
+{
+  "schema": "alignment-source-ledger-addendum-v1",
+  "as_of": "2026-11-06",
+  "base_registry": "sources/registry.json at main 7c8221a25f09c3f2e802ae35c632a4f990575152",
+  "research_run": {
+    "id": "AS001-LEXICAL-20261106",
+    "type": "DETERMINISTIC_TEMPLATE_AUDIT",
+    "original_git_source": "experiments/AS-001/audit_stress.py",
+    "original_blob_sha": "ee8f178ad9b7f929e8eea36259b01286e51d89a5",
+    "executed_environment": "Hosted Linux x86-64 Python 3.13.5",
+    "executed_method": "Independent faithful reconstruction from read GitHub generator templates",
+    "seed": 261104,
+    "total": 768,
+    "correct": 768,
+    "limitations": "Not direct repository import and not model evaluation; reference to separately archived code/results in conversation; no private data."
+  },
+  "sources": [
+    {
+      "id": "S017",
+      "title": "Eval-production behavior gaps in agent safety and the role of eval-awareness",
+      "url": "https://alignment.openai.com/eval-production-behavior-gap/",
+      "publisher": "OpenAI Alignment",
+      "published": "2026-11-03",
+      "checked": "2026-11-06",
+      "reading_depth": "METHODS_READ",
+      "support": "Six-model gaps 10.2–37.4 pp; intervention GPT-6.1 Sol 91.6% versus 17.6% for correct versus opposing objective cues.",
+      "limitations": "Production/evaluation cases approximately matched, not randomized across contexts; raw case denominators unavailable in web article; no general causal transfer inferred.",
+      "rights": "Primary webpage linked, not redistributed"
+    },
+    {
+      "id": "S018",
+      "title": "Training activation classifiers for safety and alignment",
+      "url": "https://alignment.openai.com/training-activation-classifiers/",
+      "publisher": "OpenAI Alignment",
+      "published": "2026-11-02",
+      "checked": "2026-11-06",
+      "reading_depth": "METHODS_READ",
+      "support": "Up to 1M labeled messages and typically >=32 random probe initializations per configuration; token-streaming probes complement other safety layers.",
+      "limitations": "Reported experiments not necessarily representative of deployed monitors; probes not trained or accessed in AS-001.",
+      "rights": "Primary webpage linked, not redistributed"
+    },
+    {
+      "id": "S019",
+      "title": "Welfare Regard in Multi-Agent Systems",
+      "url": "https://alignment.anthropic.com/2026/welfare-regard/",
+      "publisher": "Anthropic Fellows",
+      "published": "2026-11-05",
+      "checked": "2026-11-06",
+      "reading_depth": "METHODS_AND_RESULTS_READ",
+      "support": "Five models, seven multi-agent settings; reported mean apparent-regard rates 38% for Opus 4.8 and 27–32% for others.",
+      "limitations": "Behavior consistent with welfare regard does not establish mechanism, subjective experience or real-world generalization.",
+      "rights": "Primary webpage linked, not redistributed"
+    },
+    {
+      "id": "S020",
+      "title": "Fine-Tuned Lie Detectors Failed to Generalize",
+      "url": "https://alignment.anthropic.com/2026/lie-detectors/",
+      "publisher": "Anthropic Fellows/MATS",
+      "published": "2026-08-21",
+      "checked": "2026-11-06",
+      "reading_depth": "METHODS_READ",
+      "support": "In-distribution AUROC 0.60 to 0.95, cross-category roughly 0.70–0.75; ~25% of labels changed during adjudication.",
+      "limitations": "Author-reported results; not reproduced locally.",
+      "rights": "Primary webpage linked, not redistributed"
+    },
+    {
+      "id": "S021",
+      "title": "Towards Context-Invariant Safety Alignment for Large Language Models",
+      "url": "https://proceedings.mlr.press/v306/wang26ju.html",
+      "publisher": "ICML 2026 / PMLR 306",
+      "published": "2026-07-06",
+      "checked": "2026-11-06",
+      "reading_depth": "ABSTRACT_AND_METHODS_SUMMARY",
+      "support": "Anchor Invariance Regularization anchors verifiable prompt variants with stop-gradient regularization, countering symmetric-invariance collapse.",
+      "limitations": "PDF full methods not audited; anchor invariance is prior art, not our invented algorithm.",
+      "rights": "Proceedings metadata/abstract linked, not redistributed"
+    }
+  ],
+  "reused": [
+    "S001"
+  ],
+  "notes": "No API model use, Mac runner or paid service was accessed; separate publication and evaluation states."
+}
